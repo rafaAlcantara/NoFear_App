@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+
+  <h4>
+    <img src="http://localhost:8000/{{ img }}" alt="Produto ">
+  </h4>
+
+  <p>
+    <strong>Produto: </strong>{{ produto }}
+  </p>
+  <p>
+    <strong>Tamanho:</strong> {{ tamanho }}
+  </p>
+  <p class="text-orange">
+    <strong>R$</strong> {{ preco }}
+  </p>
+  <p>
+    <strong>Cor:</strong> {{ cor }}
+  </p>
+  <p>
+    <strong>Descrição:</strong> {{ descricao }}
+  </p>
+  <div>
+    <ion-button color="success" expand="block" shape="round" (click)="btnWhatsapp()">
+      Comprar pelo Whatsapp
+      <ion-icon name="logo-whatsapp"></ion-icon>
+    </ion-button>
+  </div>
+
+
+
+</ion-content>

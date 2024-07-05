@@ -1,0 +1,18 @@
+<ion-content>
+  <ion-text>
+    <h4>Loja</h4>
+  </ion-text>
+  
+  <ion-searchbar (ionInput)="getProdutosBusca($event)" placeholder="Buscar produto"></ion-searchbar>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let produto of produtos" (click)="getProduto(produto.pk_id)">
+        <img src="http://localhost:8000/{{ produto.img }}" />
+        <p>{{ produto.produto}}</p>
+        <p><ion-text color="primary">{{ produto.preco | currency : 'BRL'}}</ion-text></p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>

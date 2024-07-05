@@ -1,0 +1,22 @@
+
+
+<ion-content [fullscreen]="true" class="">
+  <ion-text>
+    <h4>Professores</h4>
+  </ion-text>
+
+  <ion-grid>
+    <ion-row *ngFor="let professor of professores">
+      <ion-col>
+        <img [alt]="professor.nome" [src]="professor.img" />
+      </ion-col>
+      <ion-col>
+        <ion-label>{{ professor.nome }}</ion-label>
+        <p>
+          <ion-text color="medium">{{ professor.descricao }}</ion-text>
+        </p>
+      </ion-col>
+    </ion-row>
+   
+  </ion-grid>
+</ion-content>

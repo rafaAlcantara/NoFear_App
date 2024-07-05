@@ -1,0 +1,25 @@
+<ion-content [fullscreen]="true" class="">
+  <ion-text>
+    <h4>Muay thai Personal</h4>
+  </ion-text>
+
+  <p>
+    <iframe width="100%" height="200" src="https://www.youtube.com/embed/EIHQv-CrHHI?si=2DVTrQai7iRv0Bxq&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </p>
+
+  <ion-text>
+    <h5>Sobre o Muay thai Personal</h5>
+  </ion-text>
+
+  <p class="sobre">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed aliquam nibh, quis pulvinar diam. Curabitur mauris est, dictum id est ac, suscipit facilisis magna. Fusce finibus suscipit nisl eget sollicitudin. Fusce molestie quis nunc ultricies maximus. Nullam sodales enim ut mi euismod viverra. Donec tempus ex urna, at ullamcorper mi eleifend eu. Phasellus nec rhoncus massa. Pellentesque et lobortis velit. Etiam id iaculis nisi. Phasellus vel arcu eu nisl faucibus venenatis vel at dolor. Nunc vitae tristique risus. Integer nec orci eu mi posuere consectetur vel vel velit.
+  </p>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let foto of fotos">
+        <img [src]="foto.img" />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

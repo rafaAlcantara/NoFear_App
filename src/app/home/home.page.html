@@ -1,0 +1,23 @@
+
+
+<ion-content [fullscreen]="true">
+  <ion-text>
+    <h5>Conheça nossa academia</h5>
+  </ion-text>
+
+  <p>
+    <img src="/assets/img/banner-nofear.jpg" alt="Banner">
+  </p>
+
+  <ion-text>
+    <h4>Venha conheçer nossa equipe</h4>
+  </ion-text>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="6" *ngFor="let foto of fotos">
+          <img [src]="foto.img" />
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
