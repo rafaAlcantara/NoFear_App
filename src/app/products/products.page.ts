@@ -11,12 +11,12 @@ export class ProductsPage implements OnInit {
 
   private _id_produto: number = 0
   public img: any;
-  public descricao: any;
   public produto: any;
   public tamanho: any;
   public cor: any;
   public marca: any;
   public preco: any;
+  public descricao: any;
 
   constructor(
     private _activatedRoute: ActivatedRoute,
@@ -40,12 +40,12 @@ export class ProductsPage implements OnInit {
       if(data['status'] == 'success') {
         console.log(data)
         this.img = data['produto']['img'],
-        this.descricao = data['produto']['descricao'],
         this.produto = data['produto']['produto'],
         this.tamanho = data['produto']['tamanho'],
         this.cor = data['produto']['cor'],
         this.marca = data['produto']['marca'],
-        this.preco = data['produto']['preco']
+        this.preco = data['produto']['preco'],
+        this.descricao = data['produto']['descricao']
 
       }
     })
