@@ -1,10 +1,9 @@
 <ion-content [fullscreen]="true" class="ion-padding">
 
-  <!-- <ion-icon name="arrow-back-outline">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</ion-icon> --><!--Icone de voltar-->
-
-
+  
+  
   <h4>
-    <img src="http://localhost:8000/{{ img }}" alt="Produto ">
+    <img src="https://g1a.com.br/nofear/{{ img }}" alt="Produto ">
   </h4>
 
   <p>
@@ -25,7 +24,11 @@
   <div>
     <ion-button color="success" expand="block" shape="round" (click)="btnWhatsapp()">
       Comprar pelo Whatsapp
-      <ion-icon name="logo-whatsapp"></ion-icon>
+      <ion-icon slot="end" name="logo-whatsapp"></ion-icon>
+    </ion-button>
+    <ion-button color="primary" expand="block" shape="round" routerLink="/loja">
+      Voltar
+      <ion-icon slot="start" name="arrow-back-outline"></ion-icon>
     </ion-button>
   </div>
 

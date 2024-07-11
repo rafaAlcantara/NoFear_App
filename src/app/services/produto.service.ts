@@ -6,7 +6,8 @@ import { Injectable } from '@angular/core';
 })
 export class ProdutoService {
 
-  private _url: string = "http://localhost/api_back_projeto/produto/";
+  // private _url: string = "http://localhost/api_back_projeto/produto/";
+  private _url: string = "https://g1a.com.br/nofear/api_back_projeto/produto/";
 
   private _httpOptions = {
     headers: new HttpHeaders({ 
